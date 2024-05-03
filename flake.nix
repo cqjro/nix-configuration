@@ -16,7 +16,7 @@
         specialArgs = {inherit inputs;};
         modules = [
           ./hosts/default/configuration.nix
-           inputs.home-manager.nixosModules.default
+          inputs.home-manager.nixosModules.default
         ];
       };
       # macos = nikpkgs.lib.nixosSystem {} do the funny here

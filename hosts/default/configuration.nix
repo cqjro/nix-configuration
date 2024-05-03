@@ -154,8 +154,7 @@
      # Terminals
      alacritty 
      kitty 
-     st
-     wezterm
+     starship
 
      # Terminal Stuff
      vim
@@ -176,21 +175,23 @@
      gnome.gnome-tweaks
      gnomeExtensions.unite
      
-     # hyprland
+     # hyprland -> TODO: MOVE TO home.nix along with hyprland configs in this file
      waybar 
      # if waybar workspaces dont work -> (pkgs.waybar.overrideAttrs (oldAttrs: { mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ]; }))
      dunst
      libnotify
      swww # wallpaper daemon, alternatives are hyprpaper, swaybg, wpaperd, mpvpaper     
      rofi-wayland # alternative is wofi   # Alternative App Launchers: bemenu, fuzzel, tofi
+     wofi
      networkmanagerapplet
      blueman
+     pamixer # hyprland audio control?, alernatively try osd
+     brightnessctl # hyprland brightness control
+     playerctl # hyprland media player control
+
 
      # Programs/Program Adjacent
-     libsForQt5.dolphin # file manger
-     discord
-     vesktop # used to make discord screen sharing work
-     armcord # alternative discord client
+     libsForQt5.dolphin #KDE file manger
      whatsapp-for-linux
      vscode
      obsidian
@@ -200,12 +201,22 @@
      steam
      brave
      openrgb # open source rgb control
+     obs-studio
+
+     # Libre Office
      libreoffice-qt # libre office
      hunspell # spell checker for libre office
      hunspellDicts.fr-any
-     hunspellDicts.en_CA-large
-     obs-studio     
-    
+     hunspellDicts.en_CA-large     
+     
+     # Trying out Discord Options
+     discord
+     vesktop # used to make discord screen sharing work
+     armcord # alternative discord client
+     betterdiscord-installer # another discord client
+     betterdiscordctl    
+     discordo # discord terminal client
+
      # Trying out Spotify Options
      spotify
      spotifyd # alternative spotify terminal client
